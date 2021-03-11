@@ -13,60 +13,73 @@ GitHub Repository: https://github.com/MakaylaMR/cpnt262-a3
 
 Heroku App: https://jeepgallery.herokuapp.com/
 
-## Hints
+## `npm` Project Setup
 
-### `npm` Project Setup
+The `npm` was setup using the [npm: getting started](https://gist.github.com/acidtone/d57f41d7c18d0d198263c7bc3ab230e3). The `package.json` and `node_modules` can be found in the root project of CPNT262-a3. `npm` was installed on 2021-03-10 and did not require an update.
 
-The `npm` was setup using the [npm: getting started](https://gist.github.com/acidtone/d57f41d7c18d0d198263c7bc3ab230e3).
+### `dotenv`
+The `dotenv` can be found inside:
+`package.json` (inside dependencies)
+- line 13
 
+`package-lock.json`
+- lines 84 - 87
 
-- lines 3 - 103
+`server.js`
+- lines 4, 5 and 11
 
-These images are my own and do not have a 3rd party web page to link to. You can expect he objects to include the following information (please note it will not include `linkURL`):
+Created a text file `.env` and can be found in the root project of CPNT262-a3.
 
-- `id`
-- `title`
-- `description`
-- `width`
-- `height`
-- `pathURL`
-- `credit`
-- `creditLink`
-- `alt`
+### `express`
+`express` was imported into the `server.js` file and created as an app object.
+- lines 1 -2
 
-### Array Loop and Output
+Used `express` to create a static web server and to send the `public` directory as a response (inside `server.js`).
+- line 8 
 
-You can find the image array in `scripts\main.js`.
+## Server Setup
+In brackets is which file the lines of code can be found.
 
-- lines 105 - 138
+`express` imported with `require()` (`server.js`)
+- line 1
 
-I have used the `append` method for this project. This allowed me to nest elements into other elements. This made it possible for me to style the content without everything stacking on top of each other. When using the `output +=` method I found it impossible to style the content the way I wanted to.
+Serve static assets from a `public` directory using `express.static()`(`server.js`)
+- line 8
 
-Any information as to why I used certain code can be found in the comments from lines 105-138.
+A default port of `3000` when `process.env.PORT` is not found (`server.js`)
+- line 4
 
-(Yes I know the credit could have displayed once, however, the figure looked too empty then and decided to include it with every image element)
+Define the development port as port `3000` in an environment variable (`.env`)
+- line 1
 
-### Setup and Deployment
+Import the port environment variable using the `dotenv` package. (`server.js`)
+- line 4
 
-Images are located inside `assets\images`. You can expect the gallery to be responsive to all screen sizes. (the use of media queries was used to achieve this go to `styles\main.css` lines 129 - 154).
+## Custom 404 Page
+Return a custom 404 page when a static file cannot be found (`server.js`)
+- lines 19 - 22
 
-The Javascript is an external script sheet `scripts\main.js`, and is linked inside the head of the HTML
+Include a `404` response code (`server.js`)
+- line 20
 
-- line 9
+A valid HTML page
+`server.js`
+- line 21
 
-CSS pages are external stylesheets and are both located inside the `styles` directory, linked in the head of the HTML
+HTML page can be found in `public/404.html`
 
-- lines 7 - 8
+## Heroku Deployment
+Link to Heroku app above under links.
 
 ## Attributions
 
 | Author/Creator |                                              Original Work                                               |                                                                 License |
 | -------------- | :------------------------------------------------------------------------------------------------------: | ----------------------------------------------------------------------: |
-| Google         |                    [Google Fonts](https://fonts.google.com/?preview.text_type=custom)                    |             [Google Font License](https://fonts.google.com/attribution) |
-| FreeCodeCamp   | [FreeCodeCamp Loops](https://forum.freecodecamp.org/t/its-this-a-good-way-to-create-a-image-loop/323175) | [Terms of Service](https://www.freecodecamp.org/news/terms-of-service/) |
+| Steve Griffith         |                    [Youtube](https://www.youtube.com/watch?v=5WFyhsnU4Ik)                    |             N/A |
+| Smashicons   | [404 SVG](https://www.flaticon.com/free-icon/sad_396818?term=sad%20face&page=1&position=90&page=1&position=90&related_id=396818&origin=tag) | [License Summary](https://www.flaticon.com/free-icon/sad_396818?term=sad%20face&page=1&position=90&page=1&position=90&related_id=396818&origin=tag) |
 
 ## Attributions (in-class)
 
-| Person      |                                  Links                                   |
+| Person      |                                  Links/Contribution                                   |
 | ----------- | :----------------------------------------------------------------------: |
-| Ashlyn Knox | [Link](https://github.com/ashlyn-knox/js-sandbox/blob/main/gallery.html) |
+| Vitaly Gins + Aidan O'Reilly | Sent link to for the .env video|
