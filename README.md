@@ -15,9 +15,10 @@ Heroku App: https://jeepgallery.herokuapp.com/
 
 ## Hints
 
-### Image Array
+### `npm` Project Setup
 
-You can find the image array in `scripts\main.js`.
+The `npm` was setup using the [npm: getting started](https://gist.github.com/acidtone/d57f41d7c18d0d198263c7bc3ab230e3).
+
 
 - lines 3 - 103
 
