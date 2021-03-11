@@ -1,0 +1,36 @@
+/* 404 Error Page */
+#oops {
+  background: #263859;
+  /*fills the entire page w/o scroll*/
+  position: fixed;
+  left: 0px;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 1em;
+
+  #error-text {
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Shabnam', Tahoma, sans-serif;
+    color: #000;
+
+    p {
+      font-size: 24px;
+      color: #6b778d
+    }
+
+    img {
+      height: 340px;
+    }
+
+    span {
+      font-size: 7rem;
+      font-weight: 800;
+      color: #6b778d;
+      margin-bottom: 3rem;
+    }
+  }
+}
