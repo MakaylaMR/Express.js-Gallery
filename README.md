@@ -77,6 +77,7 @@ Link to Heroku app above under links.
 | -------------- | :------------------------------------------------------------------------------------------------------: | ----------------------------------------------------------------------: |
 | Steve Griffith         |                    [Youtube](https://www.youtube.com/watch?v=5WFyhsnU4Ik)                    |             N/A |
 | Smashicons   | [404 SVG](https://www.flaticon.com/free-icon/sad_396818?term=sad%20face&page=1&position=90&page=1&position=90&related_id=396818&origin=tag) | [License Summary](https://www.flaticon.com/free-icon/sad_396818?term=sad%20face&page=1&position=90&page=1&position=90&related_id=396818&origin=tag) |
+| Techdiaries Team        |                    [The sendFile() Method](https://www.techiediaries.com/express-sendfile-serve-static-files/)                    |             N/A |
 
 ## Attributions (in-class)
 
